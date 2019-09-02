@@ -1,3 +1,3 @@
-<?php include_once("index.html");
+<?php include_once("indexWeb.html");
 echo "Hola mundo";
 ?>
