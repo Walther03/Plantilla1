@@ -11,6 +11,19 @@
 
 /* Based on meyerweb.com/eric/tools/css/reset (v2.0 | 20110126 | License: public domain) */
 
+
+   image.wa {
+			display: block;
+			margin: 0 auto;
+			max-width: calc(100% - 5em);
+			width: 60em;
+			
+		}
+		.image.wa img {
+				display: block;
+				width: 100%;
+			}
+
 	html, body, div, span, applet, object,
 	iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 	pre, a, abbr, acronym, address, big, cite,
@@ -1968,7 +1981,8 @@
 	.container {
 		margin: 0 auto;
 		max-width: calc(100% - 5em);
-		width: 60em;
+		width: 90em;
+		
 	}
 
 		.container.xsmall {
@@ -2450,6 +2464,8 @@
 		display: inline-block;
 		position: relative;
 	}
+	
+	
 
 		.image img {
 			border-radius: 6px;
@@ -2468,16 +2484,35 @@
 			top: 0.25em;
 		}
 
+		
+
 		.image.fit {
 			display: block;
 			margin: 0 0 2em 0;
 			width: 100%;
 		}
-
-			.image.fit img {
+		
+		.image.fit img {
 				display: block;
 				width: 100%;
 			}
+		
+		.image.fitwa {
+			display: block;
+			margin: 0 0 2em 0;
+			width: 100%;
+		}
+		
+		.image.fit img {
+				display: block;
+				width: 100%;
+			}
+
+			
+			
+			
+			
+	
 
 /* List */
 
