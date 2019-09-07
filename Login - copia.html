@@ -19,9 +19,9 @@
 			<!-- Main -->
 				<section id="main" class="container small">
 				<h2><center>Iniciar Sesión</center></h2>
-				<section class="box" method="post" >
+				<section class="box">
 					<div class="box">
-						<form method="post" >
+							
 						<div class="wrap-input100 validate-input" data-validate = "Enter username">
 										<input class="input100" id="User" type="text" name="username" placeholder="User name">
 										<span class="focus-input100" data-placeholder="&#xe82a;"></span>
@@ -36,7 +36,7 @@
 						<div class="col-3 col-12-mobilep">
 										<input type="submit" value="Ingresar" class="fit" onclick="getCredenciales()" />						
 						</div>
-						</form>			
+											
 						<script type="text/javascript">
 						function getCredenciales()
 						{
@@ -52,18 +52,11 @@
 						
 						}
 				</script>
-						<?php
-
-						$nombre = $_POST['username'];
-						echo $nombre;
-
-						?>
+						
 						
 					</div>
 				</section>
 				</section>
-					
-
 
 			<!-- Footer -->
 				<footer id="footer">
