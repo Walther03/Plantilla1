@@ -1,8 +1,10 @@
-function getCredenciales()
+function getCredenciales(user,pass)
 						{
-						var User = document.getElementById("User").value;
-						var Pass = document.getElementById("Pass").value;
-						if (User == "TDP2019" && Pass == "1234" ) {
+						var User = user;
+						var Pass = pass;
+						if (User == "TDP2019" && Pass == "1234" ) 
+						{
+							alert("Credenciales Correctas");
 							   window.location = "TDPAuto.html";
 							}
 							else  {

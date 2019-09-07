@@ -9,7 +9,7 @@
 	<head>
 	
 		<span class="image fit"><img src="https://res.cloudinary.com/hpd6mjtj1/image/upload/v1567442322/tdplogin2_hwzbdx.png"   /></span>
-		
+			<script src="assets/js/Login.js"></script>
 	</head>
 	
 	
@@ -21,7 +21,7 @@
 				<h2><center>Iniciar Sesión</center></h2>
 				<section class="box" method="post" >
 					<div class="box">
-						<form method="post" >
+					
 						<div class="wrap-input100 validate-input" data-validate = "Enter username">
 										<input class="input100" id="User" type="text" name="username" placeholder="User name">
 										<span class="focus-input100" data-placeholder="&#xe82a;"></span>
@@ -34,30 +34,20 @@
 						</div>
 						<br>
 						<div class="col-3 col-12-mobilep">
-										<input type="submit" value="Ingresar" class="fit" onclick="getCredenciales()" />						
+										<input type="submit" value="Ingresar" class="fit" onclick="getCredencialesHTML()" />						
 						</div>
-						</form>			
+					
 						<script type="text/javascript">
-						function getCredenciales()
+						function getCredencialesHTML()
 						{
 						var User = document.getElementById("User").value;
 						var Pass = document.getElementById("Pass").value;
-						if (User == "TDP2019" && Pass == "1234" ) {
-							   alert("Correcto");
-							   window.location = "TDPAuto.html";
-							}
-							else  {
-							   alert("Credenciales Incorrectas");
-							}
+						
+						getCredenciales(User,Pass);
 						
 						}
 				</script>
-						<?php
-
-						$nombre = $_POST['username'];
-						echo $nombre;
-
-						?>
+					
 						
 					</div>
 				</section>
