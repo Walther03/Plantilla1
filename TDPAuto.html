@@ -1,7 +1,79 @@
 <!DOCTYPE HTML>
 <html>
+<script src="assets/js/Login.js"></script>
+
+
+<script language="JavaScript">
+var remplaza = /\+/gi; 
+var url = window.location.href;
+
+url = unescape(url);
+url = url.replace(remplaza, " ");
+url = url.toUpperCase();
+
+function obtener_valor(variable) 
+{ 
+	var variable_may = variable.toUpperCase();
+	var variable_pos = url.indexOf(variable_may);
+
+if (variable_pos != -1) 
+{
+	var pos_separador = url.indexOf("&", variable_pos);
+
+if (pos_separador != -1) 
+{
+	return url.substring(variable_pos + variable_may.length + 1, pos_separador);
+} else
+{
+	return url.substring(variable_pos + variable_may.length + 1, url.length);
+}
+} else 
+{
+return "NO_ENCONTRADO";
+}
+}
+</script>
+
+<script language="JavaScript">
+
+var valor = obtener_valor("User");
+
+if (valor == 1) 
+{
+document.write ('Microsoft a sido llevada a juicio por monopolio, ....');
+}
+
+if (valor == 2)
+{
+document.write ('Luego de vender 1 millon de ejemplares los dueños de i-node dicen que sus expectativas...');
+}
+
+if (valor == 3) 
+{
+document.write ('Ya son mas de 120 Millones las paginas en la red, dado...');
+}
+
+</script>
+
+
+
+
+
+
+
+<!-- <script type="text/javascript"> -->
+
+// function getSesion()
+// {
+	
+// 	sesion("");
+
+// }
+
+// getSesion();
+<!-- 				</script> -->
 	<head>
-		<title>Banbif - Tsoft</title>
+		<title>Tsoft</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
